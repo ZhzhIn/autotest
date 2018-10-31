@@ -1,0 +1,21 @@
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>自动化测试平台--登录</title>
+    <style>body{text-align:center}</style>
+</head>
+<body>
+    <div><font size="1">
+    <h1>自动化测试平台</h1>
+    </font></div>
+    
+    <form method ="post" actioin = "/login/">{% csrf_token %}
+    <br><a>用户名:</a><input name="username" type="text" placeholder="username">
+    <br><a>密  码:</a><input name = "password" type="password" placeholder="password">
+    <br>{{error}}<br>
+    <br><button style ="width:220px;height:28px;" id="submit" type="submit">登录</button>
+    </form>
+</body>
+</html>
